@@ -20,6 +20,12 @@ class TestSongSearch(unittest.TestCase):
        print(data[0])
        print(data[1].split('.')[0])
        self.assertEqual(str(data[0]), data[1].split('.')[0])
+
+    def test_song_search_1992(self):
+       data = songSearch(1992, test=True)
+       print(data[0])
+       print(data[1].split('.')[0])
+       self.assertEqual(str(data[0]), data[1].split('.')[0])
     
 
 if __name__ == '__main__':
